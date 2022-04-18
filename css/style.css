@@ -1,0 +1,39 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  display: block;
+  margin: 0 auto;
+}
+
+table{
+  width: 100%;
+}
+
+tr {
+  border: 10px solid red;
+  padding: 10px;
+}
+
+/*header cell
+th{
+  border: 2px solid green;
+}*/
+
+/*cell
+td{
+  border: 2px solid purple;
+}*/
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
