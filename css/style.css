@@ -17,22 +17,21 @@ img{
 
 table{
   width: 100%;
+  border-collapse: collapse;
 }
 
-tr {
-  border: 10px solid red;
-  padding: 10px;
+.infoRow:nth-child(even) { 
+  /* min-width: 100px; */
+  background-color: rgba(235, 211, 175, 50%);
 }
 
-/*header cell
 th{
-  border: 2px solid green;
-}*/
+  text-decoration: underline;
+}
 
-/*cell
 td{
-  border: 2px solid purple;
-}*/
+  padding: 5px 10px;
+}
 
 /******************************************
 /* ADDITIONAL STYLES
