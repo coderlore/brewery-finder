@@ -1,3 +1,4 @@
+let result = document.querySelector("h3")
 let table = document.querySelector("table")
 document.querySelector('button').addEventListener('click', getFetch)
 
@@ -10,9 +11,11 @@ function getFetch(){
       .then(res => res.json()) // parse response as JSON
       .then(data => {
         // console.log(data[0].name)
+        result.classList.remove('hidden')
+        table.classList.remove('hidden')
+        clearRows()
         data.forEach( (obj,index) => {
           if (data[index].brewery_type != "closed"){
-            console.log(data[index].name)
             let newRow = table.insertRow(1)
             newRow.classList.add('infoRow')
             let cell1 = newRow.insertCell(0) 
@@ -56,4 +59,10 @@ function formatPhoneNumber(phoneNumberString) {
     return [intlCode, '(', match[2], ') ', match[3], '-', match[4]].join('');
   }
   return null;
+}
+
+function clearRows() {
+  while(table.rows.length > 1){
+    table.deleteRow(1)
+  }
 }

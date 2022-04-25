@@ -5,24 +5,59 @@
 /* Box Model Hack */
 *{
   box-sizing: border-box;
+  background-color: #F3F0E9;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-img{
-  display: block;
-  margin: 0 auto;
+h1, section, h3 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+section {
+  padding: 80px 0;
+  font-size: 1rem;
+}
+
+button {
+  border-radius: 5px;
+  background-color: #E6B794;
+  border: none;
+  padding: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #F0D8B8;
+}
+
+.hidden {
+  display: none;
+}
+
+h3 {
+  font-size: 2rem;
 }
 
 table{
   width: 100%;
   border-collapse: collapse;
+  font-size: 1rem;
+  border-spacing: 0;
 }
 
-.infoRow:nth-child(even) { 
-  /* min-width: 100px; */
-  background-color: rgba(235, 211, 175, 50%);
+.infoRow:nth-child(even) > td { 
+  background: #F0D8B8;
 }
 
 th{
